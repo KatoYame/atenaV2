@@ -1,12 +1,16 @@
-# Atena Bot V2
+<p align="center">
+	<img src="https://telegra.ph/file/5eb29cdde18832cc883b4.jpg" width="35%" style="margin-left: auto;margin-right: auto;display: block;">
+</p>
+<h1 align="center">Bot WhatsApp by Kato (original SC by Khael)</h1>
 
-Simple WhatsApp Bot
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/BapakLuPedo/atenaV2)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/KatoYame/atenaV2)
 
-[![Run on Repl.it](https://repl.it/badge/github/BapakLuPedo/atenaV2)](https://repl.it/github/BapakLuPedo/atenaV2)
+[![Run on Repl.it](https://repl.it/badge/github/KhaelSan/haruno)](https://github.com/KatoYame/atenaV2)
 
-## FOR TERMUX/UBUNTU/SSH USER
+[![Grup WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/INua3dEj25B0eFrHma0OsC)
+
+## UNTUK PENGGUNA TERMUX/UBUNTU/SSH
 
 ```bash
 apt update && apt upgrade
@@ -14,74 +18,64 @@ apt install git -y
 apt install nodejs -y
 apt install ffmpeg -y
 apt install imagemagick -y
-git clone https://github.com/Nurutomo/wabot-aq
-cd wabot-aq
+git clone https://github.com/KhaelSan/atena
+cd atena-san
+npm install
+npm start
+```
+
+## UNTUK PENGGUNA WINDOWS/VPS/RDP
+
+* Unduh & Instal Git [`Klik Disini`](https://git-scm.com/downloads)
+* Unduh & Instal NodeJS [`Klik Disini`](https://nodejs.org/en/download)
+* Unduh & Instal FFmpeg [`Klik Disini`](https://ffmpeg.org/download.html) (**Jangan Lupa Tambahkan FFmpeg ke variabel lingkungan PATH**)
+* Unduh & Instal ImageMagick [`Klik Disini`](https://imagemagick.org/script/download.php)
+
+```bash
+git clone https://github.com/KhaelSan/atena-san
+cd atena-san
 npm install
 npm update
+npm index
 ```
 
 ---------
 
-## FOR WINDOWS/VPS/RDP USER
+## UNTUK PENGGUNA HEROKU
 
-* Download And Install Git [`Click Here`](https://git-scm.com/downloads)
-* Download And Install NodeJS [`Click Here`](https://nodejs.org/en/download)
-* Download And Install FFmpeg [`Click Here`](https://ffmpeg.org/download.html) (**Don't Forget Add FFmpeg to PATH enviroment variables**)
-* Download And Install ImageMagick [`Click Here`](https://imagemagick.org/script/download.php)
-
-```bash
-git clone https://github.com/Nurutomo/wabot-aq
-cd wabot-aq
-npm install
-npm update
-```
-
----------
-
-## Run
-
-```bash
-node .
-```
+### Instal Buildpack
+* heroku/nodejs
+* https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git
+* https://github.com/DuckyTeam/heroku-buildpack-imagemagick.git
 
 ---------
 
 ## Arguments `node . [--options] [<session name>]`
 
+#### Contoh: `node . --self --restrict --autoread`
+
 ### `--self`
 
-Activate self mode (Ignores other)
-
-### `--pconly`
-
-If that chat not from private bot, bot will ignore
-
-### `--gconly`
-
-If that chat not from group, bot will ignore
-
-### `--swonly`
-
-If that chat not from status, bot will ignore
+Aktifkan mode self (Mengabaikan yang lain)
 
 ### `--prefix <prefixes>`
 
-* `prefixes` are seperated by each character
-Set prefix
+* `prefixes` dipisahkan oleh masing-masing karakter
+Setel awalan
 
 ### `--server`
 
-Used for [heroku](https://heroku.com/) or scan through website
+Digunakan untuk [heroku](https://heroku.com/) atau pindai melalui situs web
 
 ### `--db <json-server-url>`
 
-Use external db instead of local db, 
-Example Server `https://json-server.nurutomo.repl.co/`
+Gunakan db eksternal alih-alih db lokal, 
+Contoh Server `https://json-server.nurutomo.repl.co/`
 Code: `https://repl.it/@Nurutomo/json-server`
 
 `node . --db 'https://json-server.nurutomo.repl.co/'`
 
-The server should have like this specification
+Server harus memiliki spesifikasi seperti ini
 
 #### GET
 
@@ -103,25 +97,25 @@ Content-Type: application/json
 
 ### `--big-qr`
 
-If small qr unicode doesn't support
+Jika qr unicode kecil tidak mendukung
 
 ### `--restrict`
 
-Enables restricted plugins (which can lead your number to be **banned** if used too often)
+Mengaktifkan plugin terbatas (yang dapat menyebabkan nomor Anda **diblokir** jika digunakan terlalu sering)
 
-* Group Administration `add, kick`
+* Administrasi Grup `add, kick, promote, demote`
 
 ### `--img`
 
-Enable image inspector through terminal
+Aktifkan pemeriksa gambar melalui terminal
 
 ### `--autoread`
 
-If enabled, all incoming messages will be marked as read
+Jika diaktifkan, semua pesan masuk akan ditandai sebagai telah dibaca
 
 ### `--nyimak`
 
-No bot, just print received messages and add users to database
+Tidak ada bot, cukup cetak pesan yang diterima dan tambahkan pengguna ke database
 
 ### `--test`
 
@@ -141,10 +135,7 @@ conn.logger.level = 'debug'
 
 ---------
 
-<a href="https://api.xteam.xyz"><img src="https://i.ibb.co/7j0vtwz/xlogo.png" width="100" height="100"></a> | [![Nurutomo](https://github.com/Nurutomo.png?size=100)](https://github.com/Nurutomo) | [![Ariffb](https://github.com/ariffb25.png?size=100)](https://github.com/ariffb25) | [![Ftwrr](https://github.com/Ftwrr.png?size=100)](https://github.com/Ftwrr) 
+ [![Nurutomo](https://github.com/Nurutomo.png?size=100)](https://github.com/Nurutomo) | [![Ariffb](https://github.com/ariffb25.png?size=100)](https://github.com/ariffb25) | [![FadliDarmawan](https://github.com/FadliDarmawan.png?size=100)](https://github.com/FadliDarmawan) | [![Ariffb](https://github.com/KhaelSan.png?size=100)](https://github.com/KhaelSan)
 ----|----|----|----
-[XTEAM](https://api.xteam.xyz/) | [Nurutomo](https://github.com/Nurutomo) | [Ariffb](https://github.com/ariffb25) | [Ftwrr](https://github.com/Ftwrr)
-Powered by XTEAM | Author / Creator | Most Active Contributor | 2nd Most Active Contributor
-
-
-NOTE: This project will not maintained after `27 June 2021`, that means no update. Feel free to anyone to continue this project :)
+[Nurutomo](https://github.com/Nurutomo) | [Ariffb](https://github.com/ariffb25) | [FadliDarmawan](https://github.com/FadliDarmawan) | [KhaelSan](https://github.com/KhaelSan)
+ Penulis / Pencipta | Penulis ulang | Owner Haruno | Owner Atena
