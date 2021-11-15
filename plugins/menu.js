@@ -217,7 +217,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     if (teks == '404') {
       return conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
         "listMessage": {
-          "title": `List Menu Atena Bot`,
+          "title": `List Menu Ayame Bot`,
           "description": `${ucapan()} ${name}, have a greet day!
 
 ┍━━〔 ${conn.user.name} 〕━⬢
