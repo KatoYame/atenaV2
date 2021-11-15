@@ -1,7 +1,7 @@
 // Source Code from NekoBotz (DanishGanz)
 
 global.linkGC = ['https://chat.whatsapp.com/INua3dEj25B0eFrHma0OsC', 'https://chat.whatsapp.com/B9bGT4rmw8PFnTYCYRcNab', 'https://chat.whatsapp.com/B9bGT4rmw8PFnTYCYRcNab', 'https://chat.whatsapp.com/DrJE1mDfhyj3Q4xHp9HeL4'] // ganti jadi group lu
-global.owner = ['6282248192917', '62822481929171', '6281212924676', '6282317022706'] // Put your number here
+global.owner = ['6282317022706', '62822481929171', '6281212924676', '6282317022706'] // Put your number here
 global.mods = ['6285904398191'] // Want some help?
 global.prems = ['6283819142257', '6285695484734', '6285604708139', '6282317022706'] // Premium user has unlimited limit
 global.APIs = { // API Prefix
@@ -34,7 +34,7 @@ global.APIKeys = { // APIKey Here
 // Sticker WM
 //global.packname = '© Ayame Bot\nwa.me/6282317022706\n-\n-\n𝚋𝚢 𝙺𝚑𝚊𝚎𝚕𝚂𝚊𝚗\n\n\n\n\n\nⓈⓐⓞⓣⓞⓜⓔ\nⒶⓣⓔⓝⓐ\n\n\nFollow juga IG Orang yg bantu gw: @khaelll._'
 global.packname = ''
-global.author = '© Ayame Bot\nwa.me/628114811363\n┏┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅\n┇\n┇					Ⓢⓐⓞⓣⓞⓜⓔ\n┇							Ⓐⓣⓔⓝⓐ\n┇\n┗┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅\nғᴏʟʟᴏᴡ ɪɢ ᴏᴡɴᴇʀ: @ᴋʜᴀᴇʟʟʟ._\n𝚋𝚢 𝙺𝚑𝚊𝚎𝚕𝚂𝚊𝚗\n'
+global.author = '© Ayame Bot\nwa.me/6282317022706\n┏┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅\n┇\n┇					Ⓢⓐⓞⓣⓞⓜⓔ\n┇							Ⓐⓣⓔⓝⓐ\n┇\n┗┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅\nғᴏʟʟᴏᴡ ɪɢ ᴏᴡɴᴇʀ: @ᴋʜᴀᴇʟʟʟ._\n𝚋𝚢 𝙺𝚑𝚊𝚎𝚕𝚂𝚊𝚗\n'
 //global.author = 'Kato' // ganti aja
 
 // msg
