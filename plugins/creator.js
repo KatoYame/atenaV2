@@ -2,12 +2,12 @@ const { MessageType } = require('@adiwajshing/baileys')
 const PhoneNumber = require('awesome-phonenumber')
 async function handler(m) {
 	this.reply("Ini Owner (Developer Bot), bukan bot yah anyink Jika ingin menanyakan sesuatu tentang bot chat aj yg Khael² (Fast Resp when online)")
-  let name = 'Khael'
+  let name = 'Kato'
   number = owner[0].replace(/[^0-9]/g, '')
   let njid = number + '@s.whatsapp.net'
   let onW = await this.isOnWhatsApp(njid) || { isBusiness: false }
 
-  let name2 = 'Khael²'
+  let name2 = 'Khael'
   number2 = owner[1].replace(/[^0-9]/g, '')
   let njid2 = number2 + '@s.whatsapp.net'
   let onW2 = await this.isOnWhatsApp(njid2) || { isBusiness: true }
