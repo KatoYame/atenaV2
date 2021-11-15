@@ -7,11 +7,11 @@ let handler = async (m, { conn }) => {
 
     let _uptime = process.uptime() * 1000
     let uptime = clockString(_uptime)
-	let atena = 'https://telegra.ph/file/d87d256f3dda141d87db0.jpg'
+	let atena = 'https://telegra.ph/file/cf2ddb002f14feee3017d.jpg'
     await conn.send2ButtonLoc(m.chat, await(await fetch(atena)).buffer(), `
 ┌─〔 Info ${conn.user.name} 〕
 │Name: ${conn.user.name}
-│Main Owner: Khael
+│Main Owner: Kato&Khael
 │Operated Since: 19 September 2021
 │Language Used: Nodejs (JS)
 │Server: Heroku
