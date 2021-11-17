@@ -3,7 +3,7 @@
 global.linkGC = ['https://chat.whatsapp.com/INua3dEj25B0eFrHma0OsC', 'https://chat.whatsapp.com/B9bGT4rmw8PFnTYCYRcNab', 'https://chat.whatsapp.com/B9bGT4rmw8PFnTYCYRcNab', 'https://chat.whatsapp.com/DrJE1mDfhyj3Q4xHp9HeL4'] // ganti jadi group lu
 global.owner = ['6282317022706', '6282248192917'] // Put your number here
 global.mods = ['6285904398191'] // Want some help?
-global.prems = ['6283819142257', '6285695484734', '6285604708139', '6282317022706'] // Premium user has unlimited limit
+global.prems = ['6282317022706', '6282248192917', '6281770640805', '6282289430674'] // Premium user has unlimited limit
 global.APIs = { // API Prefix
   // name: 'https://website'
   hardianto: 'https://hardianto-chan.herokuapp.com',
