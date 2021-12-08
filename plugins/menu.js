@@ -239,7 +239,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                                     "description": "Untuk kamu yang ingin melihat daftar harga sewa dan premium.",
                                     "rowId": ".sewabot"
                                 }, {
-                                    "title": "Link Gc Atena",
+                                    "title": "Link Gc Ayame",
                                     "description": "",
                                     "rowId": ".linkgcbot"
                                 }],
