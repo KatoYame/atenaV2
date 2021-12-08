@@ -228,7 +228,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                             {
                                 "rows": [{
                                     "title": "Status Bot",
-                                    "description": "Status dan informasi Bot Atena.",
+                                    "description": "Status dan informasi Bot Ayame.",
                                     "rowId": ".botstatus"
                                 }, {
                                     "title": "Rules",
@@ -359,14 +359,14 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                                     "rowId": ".? tanpakategori"
                                 }, {
                                     "title": `Menu ${no+=1}. │👩🏿‍💻│`,
-                                    "description": "Owner Bot (khusus owner Bot Atena)",
+                                    "description": "Owner Bot (khusus owner Bot Ayame)",
                                     "rowId": ".? owner"
                                 }],
                                 "title": "⟣────────────❲  Sub-menu  ❳────────────⟢"
                             }, {
                                 "rows": [{
                                     "title": "Owner bot",
-                                    "description": "pemilik Bot Atena",
+                                    "description": "pemilik Bot Ayame",
                                     "rowId": ".owner"
                                 }, {
                                     "title": "Donasi",
