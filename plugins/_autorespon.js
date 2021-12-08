@@ -30,10 +30,9 @@ handler.all = async function (m, { isBlocked }) {
     if ((m.mtype === 'groupInviteMessage' || m.text.startsWith('https://chat') || m.text.startsWith('Buka tautan ini')) && !m.isBaileys && !m.isGroup) {
         this.send3ButtonLoc(m.chat, await (await fetch(imagebot)).buffer(), `
 ┍━━〔List Sewa/Prem〕━⬢
-│⬦ *1 Bulan* :      *Rp 15000*
-│⬦ *Permanen* : *Rp 25000*
-│⬦ *Premium* :   *Rp 20000*
-│⬦ *Moderator* : *Rp 30000* (stok terbatas)
+│⬦ *2 Minggu* :      *Rp 10000*
+│⬦ *1 Bulan* : *Rp 20000*
+│⬦ *Premium* :   *Rp 25000*
 │⬦ *Sc Bot* :        *Rp 50000*
 │
 ┝━━〔Payments/Pembayaran〕━⬢
@@ -43,9 +42,8 @@ handler.all = async function (m, { isBlocked }) {
 │⬦ Pulsa Tsel (rate)
 │
 ┕━━━⬢
-
 Note: Syarat dan Ketentuan Berlaku`.trim(), watermark, 'Dana', '.viadana', 'Ovo', '.viaovo', '.viagopay', '.gopay', m)
-}
+	}
 
     // salam
     let reg = /(ass?alam|اَلسَّلاَمُ عَلَيْكُمْ|السلام عليکم)/i
@@ -57,6 +55,11 @@ Note: Syarat dan Ketentuan Berlaku`.trim(), watermark, 'Dana', '.viadana', 'Ovo'
     let isSalam2 = reg2.exec(m.text)
     if (isSalam2 && !m.fromMe) {
         m.reply(`_Damai Sejahtera di Hati_`)
+    }
+    let reg3 = /(terimakasih|makasih|sankyu)/i
+    let isSalam3 = reg3.exec(m.text)
+    if (isSalam3 && !m.fromMe) {
+        m.reply(`Yoii`)
     }
 
     // backup db
@@ -82,7 +85,7 @@ Note: Syarat dan Ketentuan Berlaku`.trim(), watermark, 'Dana', '.viadana', 'Ovo'
 //        await this.setStatus(`Aktif selama ${uptime} | Mode: ${global.opts['self'] ? 'Private' : setting.groupOnly ? 'Hanya Grup' : 'Publik'} | nekobotz by DanishGanz`).catch(_ => _)
         setting.status = new Date() * 1
     }
-
+   
 }
 
 module.exports = handler

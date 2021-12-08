@@ -15,21 +15,20 @@ handler.all = async function (m, { isPrems }) {
     let url = m.text.split(/\n| /i)[0]
 
     if (/^.*tiktok/i.test(m.text)) {
-        let res = await fetch(API('hardianto', '/api/download/tiktok', { url }, 'apikey'))
+        let res = await fetch(global.API('dap', '/api/socialmedia/ttdownloader', { url }, 'apikey'))
         if (!res.ok) return m.reply(eror)
         let json = await res.json()
+        // if (!json.ok) throw json
         await m.reply(wait)
         // m.reply(util.format(json))
-        await this.sendFile(m.chat, json.nowm, '', watermark, m)
+        await this.sendFile(m.chat, json.result.nowm, '', watermark, m)
     }
 
-    if (/^.*cocofun/i.test(m.text)) {
-        let res = await fetch(API('jojo', '/api/cocofun-no-wm', { url }))
-        if (!res.ok) return m.reply(eror)
-        let json = await res.json()
+    if (/^.*coco.fun/i.test(m.text)) {
+        let res = API('dap', '/api/socialmedia/cocofun', { url }, 'apikey')
         await m.reply(wait)
         // m.reply(util.format(json))
-        await this.sendFile(m.chat, json.download, '', watermark, m)
+        await this.sendFile(m.chat, res, '', watermark, m)
     }
 
     if (/^.*(fb.watch|facebook.com)/i.test(m.text)) {
@@ -41,7 +40,7 @@ handler.all = async function (m, { isPrems }) {
         await conn.sendFile(m.chat, json.data.sd.url, '', `HD: ${json.data.hd.url}\nUkuran: ${json.data.hd.size}\n\n` + watermark, m)
     }
 
-    if (/^.*instagram.com\/(p|reel|tv)/i.test(m.text)) {
+    if (/^.*instagram.com/i.test(m.text)) {
         igdl(url).then(async res => {
             let igdl = JSON.stringify(res)
             let json = JSON.parse(igdl)
