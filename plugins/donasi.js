@@ -3,7 +3,7 @@ let atena = 'https://telegra.ph/file/cf2ddb002f14feee3017d.jpg'
 let handler = async (m, { conn }) => conn.send3ButtonLoc(m.chat, await (await fetch(atena)).buffer(), `
 ┌〔 Donate/Donasi 〕
 ├ Tsel:082317022706
-├
+├ Gopay:085299575547
 ├
 │
 └────
