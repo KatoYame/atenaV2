@@ -4,7 +4,7 @@ let handler = async (m, { conn }) => conn.send3ButtonLoc(m.chat, await (await fe
 ┌〔 Donate/Donasi 〕
 ├ Tsel:082317022706
 ├ Gopay:085299575547
-├
+├ Shopeepay:082317022706
 │
 └────
 
