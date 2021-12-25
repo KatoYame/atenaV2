@@ -13,7 +13,7 @@ let handler = async (m, { conn }) => {
 │⬦ Dana
 │⬦ Gopay
 │⬦ ~Pulsa Tsel (rate)~
-│
+│⬦ Shopeepay
 ┕──────⟢
 
 
