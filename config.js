@@ -4,7 +4,7 @@ global.mods = ['6285904398191'] // Want some help?
 
 global.prems = [
 							'6281770640805', // Premium user has unlimited limit
-							'6282193003879',
+							
 							'6288211040975',
 							'6282384049432'
 							 ]
